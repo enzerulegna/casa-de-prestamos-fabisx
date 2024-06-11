@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa de Préstamos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #ff6699;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #ffcc99;
+            padding: 15px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ff6699;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        #products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .product {
+            background-color: #fff;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            width: calc(33% - 40px);
+            box-sizing: border-box;
+            transition: transform 0.3s;
+        }
+
+        .product:hover {
+            transform: translateY(-10px);
+        }
+
+        .product h2 {
+            color: #ff6699;
+            margin-top: 0;
+        }
+
+        .product p {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #ffcc99;
+            text-align: center;
+            padding: 15px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .product {
+                width: calc(50% - 40px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .product {
+                width: calc(100% - 40px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Casa de Préstamos</h1>
+        <p>Soluciones financieras a tu alcance</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Préstamos</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Sobre Nosotros</a></li>
+        </ul>
+    </nav>
+
+    <section id="products">
+        <div class="product">
+            <h2>Préstamo Personal</h2>
+            <p>Obtén un préstamo personal con tasas de interés bajas y condiciones flexibles. Ideal para cubrir gastos imprevistos o financiar proyectos personales.</p>
+            <p><strong>Monto:</strong> Hasta $50,000</p>
+            <p><strong>Plazo:</strong> Hasta 5 años</p>
+            <p><strong>Tasa de interés:</strong> Desde 5% anual</p>
+        </div>
+        <div class="product">
+            <h2>Préstamo Hipotecario</h2>
+            <p>Adquiere la casa de tus sueños con nuestras opciones de préstamo hipotecario. Ofrecemos plazos largos y tasas competitivas.</p>
+            <p><strong>Monto:</strong> Hasta $500,000</p>
+            <p><strong>Plazo:</strong> Hasta 30 años</p>
+            <p><strong>Tasa de interés:</strong> Desde 3.5% anual</p>
+        </div>
+        <div class="product">
+            <h2>Préstamo para Auto</h2>
+            <p>Financia tu auto nuevo o usado con nuestras excelentes condiciones. Rápido, fácil y conveniente.</p>
+            <p><strong>Monto:</strong> Hasta $70,000</p>
+            <p><strong>Plazo:</strong> Hasta 7 años</p>
+            <p><strong>Tasa de interés:</strong> Desde 4% anual</p>
+        </div>
+        <div class="product">
+            <h2>Préstamo para Estudiantes</h2>
+            <p>Apoya tu educación con nuestras soluciones de préstamos estudiantiles. Facilidades de pago y tasas preferenciales para estudiantes.</p>
+            <p><strong>Monto:</strong> Hasta $30,000</p>
+            <p><strong>Plazo:</strong> Hasta 10 años</p>
+            <p><strong>Tasa de interés:</strong> Desde 4.5% anual</p>
+        </div>
+        <div class="product">
+            <h2>Préstamo para Negocios</h2>
+            <p>Impulsa tu negocio con nuestro préstamo diseñado para emprendedores. Ideal para capital de trabajo o expansión.</p>
+            <p><strong>Monto:</strong> Hasta $100,000</p>
+            <p><strong>Plazo:</strong> Hasta 15 años</p>
+            <p><strong>Tasa de interés:</strong> Desde 6% anual</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Casa de Préstamos. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
