@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa de Ahorros Comunitaria</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #ff6699;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            background-color: #ffcc99;
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .product {
+            background-color: #fff;
+            margin: 15px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            text-align: center;
+        }
+
+        .product h2 {
+            color: #ff6699;
+        }
+
+        .product p {
+            color: #555;
+        }
+
+        .benefits {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .benefits h2 {
+            text-align: center;
+            color: #ff6699;
+        }
+
+        .benefits ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .benefits ul li {
+            padding: 10px 0;
+            color: #555;
+        }
+
+        footer {
+            background-color: #ffcc99;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin: 5px 0;
+            color: #333;
+        }
+
+        @media (max-width: 768px) {
+            .product {
+                width: 45%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .product {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Casa de Ahorros Comunitaria</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Ahorros</a></li>
+            <li><a href="#">Beneficios</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2 style="text-align: center; color: #ff6699;">Nuestros Productos de Ahorro</h2>
+        <div class="product-container" id="products">
+            <div class="product">
+                <h2>Ahorro Infantil</h2>
+                <p>Inicia el camino del ahorro para tus hijos desde pequeños con tasas atractivas.</p>
+            </div>
+            <div class="product">
+                <h2>Ahorro Familiar</h2>
+                <p>Un plan de ahorro flexible diseñado para el bienestar financiero de toda la familia.</p>
+            </div>
+            <div class="product">
+                <h2>Ahorro a Plazo Fijo</h2>
+                <p>Maximiza tus ahorros con tasas de interés competitivas y plazos adaptados a tus necesidades.</p>
+            </div>
+            <div class="product">
+                <h2>Ahorro para Emergencias</h2>
+                <p>Establece un fondo para emergencias con accesibilidad inmediata y sin penalidades.</p>
+            </div>
+            <div class="product">
+                <h2>Ahorro para la Educación</h2>
+                <p>Planifica el futuro educativo de tus hijos con nuestro plan de ahorro especializado.</p>
+            </div>
+        </div>
+
+        <div class="benefits">
+            <h2>Beneficios de Ahorrar con Nosotros</h2>
+            <ul>
+                <li>Tasas de interés competitivas.</li>
+                <li>Asesoría financiera personalizada.</li>
+                <li>Acceso a productos y servicios exclusivos.</li>
+                <li>Flexibilidad en plazos y condiciones.</li>
+                <li>Seguridad y confianza de una comunidad unida.</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Casa de Ahorros Comunitaria. Todos los derechos reservados.</p>
+        <p>Contacto: info@casaahorros.com | Tel: +123 456 7890</p>
+    </footer>
+</body>
+</html>
